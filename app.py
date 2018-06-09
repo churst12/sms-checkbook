@@ -33,7 +33,7 @@ def postDigital():
     	to="+14087310723", 
     	from_="+18317048704",
     	body=r.text)
-	return r.txt
+	return 'completed'
 	
 
 if __name__ == "__main__":
