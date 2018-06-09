@@ -4,7 +4,7 @@ import json
 import requests
 from flask import render_template
 
-Authorization= '23566e2b3f2d26921e2355bfd03497ee','16640e2b05a59751b7bf923737cb9942'
+headers={'Authorization': '23566e2b3f2d26921e2355bfd03497ee':'16640e2b05a59751b7bf923737cb9942'}
 #plzwork
 app = Flask(__name__)
 
@@ -15,11 +15,11 @@ def hello():
 @app.route("/send")
 def postDigital():
 	endpoint = "https://sandbox.checkbook.io/v3/check/digital"
-	info = {"name":"Test Inc.",
+	data = {"name":"Test Inc.",
 			"recipient":"widgets@example.com", 
 			"amount": 10.42
 			}
-	r = request.post( endpoint, data = info)
+	r = request.post( endpoint, headers=headers, data=data)
 	#return r.text
 	return "HI"
 
