@@ -1,1 +1,1 @@
-web: python hello.py $PORT
+web: gunicorn hello:app
