@@ -17,7 +17,7 @@ def postDigital():
 	#headers = {'Authorization': '1e55402a63d64eeea4d633f0efcb432d':'WnyNnTkSN6PY4Be1fk99KHGN5yVMEB'}
 	#hello
 	url = "https://sandbox.checkbook.io/v3/check/digital"
-	data = {'name':'Test Inc.',
+	data = {'name':'Widgets Inc.',
 			'recipient':'widgets@example.com', 
 			'amount': 10.42
 			}
