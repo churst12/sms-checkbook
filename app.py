@@ -15,6 +15,7 @@ def hello():
 @app.route("/send")
 def postDigital():
 	#headers={'Authorization': '23566e2b3f2d26921e2355bfd03497ee':'16640e2b05a59751b7bf923737cb9942'}
+	#hello
 	endpoint = "https://sandbox.checkbook.io/v3/check/digital"
 	data = {"name":"Test Inc.",
 			"recipient":"widgets@example.com", 
