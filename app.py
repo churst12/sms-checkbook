@@ -14,14 +14,14 @@ def hello():
 
 @app.route("/send")
 def postDigital():
-	headers={'Authorization': '23566e2b3f2d26921e2355bfd03497ee':'16640e2b05a59751b7bf923737cb9942'}
+	headers = {'Authorization': '1e55402a63d64eeea4d633f0efcb432d':'WnyNnTkSN6PY4Be1fk99KHGN5yVMEB'}
 	#hello
-	endpoint = "https://sandbox.checkbook.io/v3/check/digital"
+	url = "https://sandbox.checkbook.io/v3/check/digital"
 	data = {"name":"Test Inc.",
 			"recipient":"widgets@example.com", 
 			"amount": 10.42
 			}
-	#r = request.post( endpoint, headers=headers, data=data)
+	r = request.post( url, headers=headers, data=data)
 	#return r.text
 	return "HI"
 
