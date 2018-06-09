@@ -19,7 +19,7 @@ def postDigital():
 			"recipient":"widgets@example.com", 
 			"amount": 10.42
 			}
-	r = request.post( endpoint, headers=headers, data=data)
+	#r = request.post( endpoint, headers=headers, data=data)
 	#return r.text
 	return "HI"
 
