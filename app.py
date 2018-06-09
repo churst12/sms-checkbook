@@ -29,10 +29,10 @@ def postDigital():
 	print "BEFORE BEFORE"
 	r = requests.post(url, data=jsonDict, headers={'Authorization':'6467326cd8274bb29b72d307cf39a9e9:bLCfg6rdOwMpCURUo77S52EzF78TMo'})
 	print "AFTER AFTER"
-	message = client.messages.create(
-    	to="+14087310723", 
-    	from_="+18317048704",
-    	body=r.text)
+	#message = client.messages.create(
+    #	to="+14087310723", 
+    #	from_="+18317048704",
+    #	body=r.text)
 	return r.txt
 	
 
