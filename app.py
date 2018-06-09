@@ -23,8 +23,8 @@ def postDigital():
 			}
 	#r = request.post( url, headers=headers, data=data)
 	r = requests.post(url, data=data, auth=('1e55402a63d64eeea4d633f0efcb432d', 'WnyNnTkSN6PY4Be1fk99KHGN5yVMEB'))
-	#return r.text
-	return "HI"
+	return r.text
+	
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
