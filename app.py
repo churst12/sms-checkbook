@@ -23,8 +23,8 @@ def postDigital():
 			}
 	#r = request.post( url, headers=headers, data=data)
 	print "BEFORE BEFORE"
-	r = requests.post(url, data=data, auth=('1e55402a63d64eeea4d633f0efcb432d:WnyNnTkSN6PY4Be1fk99KHGN5yVMEB'))
-	print "got past r="
+	r = requests.post(url, data=data, auth=(1e55402a63d64eeea4d633f0efcb432d:WnyNnTkSN6PY4Be1fk99KHGN5yVMEB))
+	print "AFTER AFTER"
 	return r.text
 	
 
