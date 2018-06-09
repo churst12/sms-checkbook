@@ -2,7 +2,7 @@ import os
 from flask import Flask
 import json
 import requests
-from flask import render_template, 
+from flask import render_template
 from twilio.rest import Client
 
 #plzwork
