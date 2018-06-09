@@ -7,7 +7,7 @@ itsdangerous==0.24
 Jinja2==2.10
 macholib==1.5.1
 MarkupSafe==1.0
-
+requests==2.18.4
 virtualenv==16.0.0
 virtualenv-clone==0.3.0
 virtualenvwrapper==4.8.2
