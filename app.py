@@ -14,7 +14,7 @@ def hello():
 
 @app.route("/send")
 def postDigital():
-	headers = {'Authorization': '1e55402a63d64eeea4d633f0efcb432d':'WnyNnTkSN6PY4Be1fk99KHGN5yVMEB'}
+	#headers = {'Authorization': '1e55402a63d64eeea4d633f0efcb432d':'WnyNnTkSN6PY4Be1fk99KHGN5yVMEB'}
 	#hello
 	url = "https://sandbox.checkbook.io/v3/check/digital"
 	data = {"name":"Test Inc.",
@@ -22,6 +22,7 @@ def postDigital():
 			"amount": 10.42
 			}
 	#r = request.post( url, headers=headers, data=data)
+	r = requests.post(url, data=data, auth=('1e55402a63d64eeea4d633f0efcb432d', 'WnyNnTkSN6PY4Be1fk99KHGN5yVMEB'))
 	#return r.text
 	return "HI"
 
